@@ -8,14 +8,14 @@ Tiny gRPC server implementing interaction within the banking infrastructure from
    docker-compose up --build
    ```
 
-2. The gRPC server will be available on `localhost:8080`
+2. Server will be available on `localhost:8080`
 
 ## Commands
 
 You can interact with the server using the client application. Build the client first:
 
 ```bash
-go build -o client ./grpc/client/main.go
+go build -o client ./grpc/client
 ```
 
 Then run various commands:
