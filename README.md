@@ -15,8 +15,7 @@ Tiny gRPC server implementing interaction within the banking infrastructure from
 You can interact with the server using the client application. Build the client first:
 
 ```bash
-cd ../
-go build -o client ./Homework3/grpc/client
+go build -o client ./grpc/client/main.go
 ```
 
 Then run various commands:

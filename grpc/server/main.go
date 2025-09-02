@@ -1,11 +1,11 @@
 package main
 
 import (
-	"HSECourse/Homework3/models"
-	"HSECourse/Homework3/proto"
 	"context"
 	"errors"
 	"google.golang.org/grpc"
+	"grpcserv/models"
+	"grpcserv/proto"
 	"net"
 	"sync"
 )

@@ -1,12 +1,12 @@
 package main
 
 import (
-	"HSECourse/Homework3/proto"
 	"context"
 	"flag"
 	"fmt"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
+	"grpcserv/proto"
 	"time"
 )
 
