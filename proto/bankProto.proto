@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+option go_package = "HSECourse/Homework3/proto";
+
+package proto;
+
+service BankProto {
+  rpc CreateAccount(CreateAccountRequest) returns (CreateAccountResponse);
+  rpc DeleteAccount(DeleteAccountRequest) returns (DeleteAccountResponse);
+  rpc ChangeAccountName(ChangeAccountNameRequest) returns (ChangeAccountNameResponse);
+  rpc ChangeAccountAmount(ChangeAccountAmountRequest) returns (ChangeAccountAmountResponse);
+  rpc GetAccount(GetAccountRequest) returns (GetAccountResponse);
+}
+
+message CreateAccountRequest {
+  string name = 1;
+  int64 amount = 2;
+}
+
+message CreateAccountResponse {
+  string result = 1;
+}
+
+message DeleteAccountRequest {
+  string name = 1;
+}
+
+message DeleteAccountResponse {
+  string result = 1;
+}
+
+message ChangeAccountNameRequest {
+  string name = 1;
+  string newName = 2;
+}
+
+message ChangeAccountNameResponse {
+  string result = 1;
+}
+
+message ChangeAccountAmountRequest {
+  string name = 1;
+  int64 newAmount = 2;
+}
+
+message ChangeAccountAmountResponse {
+  string result = 1;
+}
+
+message GetAccountRequest {
+  string name = 1;
+}
+
+message GetAccountResponse {
+  string name = 1;
+  int64 amount = 2;
+}
